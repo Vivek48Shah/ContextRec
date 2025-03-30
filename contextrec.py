@@ -140,6 +140,7 @@ def main():
 
     print("Tokenizing dataset...")
     tokenized_dataset = tokenize_dataset(sequences_df, tokenizer)
+    tokenized_dataset.save_to_disk("./processed_dataset")
 
     print("Building model...")
     model = build_model(vocab_size=tokenizer.vocab_size)
