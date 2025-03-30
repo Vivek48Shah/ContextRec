@@ -69,6 +69,4 @@ The current implementation uses **only product IDs** to build sequences and trai
 
 By including these contextual signals, the model can learn richer relationships and deliver even more accurate and personalized recommendations.
 
----
 
-## Project Structure
