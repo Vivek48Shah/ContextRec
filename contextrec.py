@@ -132,7 +132,7 @@ def main():
     events_df = pd.read_csv(Config.RAW_DATA_PATH)
 
     print("Building vocabulary and tokenizer...")
-    build_vocab(events_df)
+    item2idx = build_vocab(events_df)
     tokenizer = create_tokenizer()
 
     print("Preparing sequences...")
