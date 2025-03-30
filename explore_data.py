@@ -44,6 +44,7 @@ plt.close()
 # ===  Session Length Distribution ===
 sessions = df.groupby(['visitorid', 'date'])['itemid'].agg(list).reset_index()
 sessions['session_length'] = sessions['itemid'].apply(len)
+sessions=sessions[sessions['session_length']>=3]
 plt.figure(figsize=(8, 4))
 sns.histplot(sessions['session_length'], bins=30, kde=True)
 plt.title("Distribution of Session Lengths")
