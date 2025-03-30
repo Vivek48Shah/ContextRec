@@ -1,7 +1,7 @@
 # ContextRec
 
 
-# ContextRec: Contextual Sequence-Based Retrieval System using Custom BERT MLM
+# Contextual Sequence-Based Retrieval System using Custom BERT MLM
 
 **ContextRec** is a contextual sequence-based retrieval system built on a custom-trained BERT-style Masked Language Model (MLM). It models user-item interaction sequences to learn contextual relationships between items, enabling personalized and intelligent retrieval and recommendations.
 
