@@ -46,6 +46,36 @@ ContextRec doesn't just memorize co-occurrence—it learns item relationships in
 
 ---
 
+## Problem Formulation
+
+ContextRec is formulated as a **Masked Item Prediction** task, inspired by Masked Language Modeling (MLM). Each user session is represented as a sequence of item IDs:
+[item_1021, item_2099, [MASK], item_4762, item_6780]
+
+The model learns to predict the masked item based on its surrounding context using a BERT-style transformer architecture.
+
+---
+
+## Evaluation
+
+We evaluate the model using **Recall@K**, a common metric in recommendation and retrieval:
+
+- For each test sequence, we mask one item.
+- The model predicts the top-K most likely items for the masked position.
+- If the true item is within those K predictions, it's considered a **hit**.
+
+### Metrics:
+
+- **Recall@K**:  
+  Proportion of masked positions where the true item appears in the top-K predictions.
+
+
+| Metric        | Value     |
+|---------------|-----------|
+| Recall@1      | 0.28     |
+| Recall@5      | 0.34     |
+| Recall@20     | 0.65     |
+---
+  
 ## Applications
 
 ContextRec can be integrated into various stages of the user journey:
