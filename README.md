@@ -1,5 +1,5 @@
 # ContextRec
-Contextual Recommendation with Sequence Modeling
+
 
 # ContextRec: Contextual Sequence-Based Retrieval System using Custom BERT MLM
 
