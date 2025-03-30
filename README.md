@@ -60,7 +60,7 @@ ContextRec can be integrated into various stages of the user journey:
 
 ## Extensibility
 
-The current implementation uses **only product IDs** to build sequences and train the model. However, this architecture is extensible. You can enhance it by incorporating:
+The current implementation uses **only product IDs** to build sequences and train the model. However, this architecture is extensible. We can enhance it by incorporating:
 
 - Product category or brand embeddings
 - User demographics or behavior segments
