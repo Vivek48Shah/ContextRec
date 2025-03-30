@@ -7,7 +7,7 @@ from datasets import load_from_disk
 
 # === Config ===
 MODEL_DIR = "./checkpoints/contextrec_model"
-DATASET_DIR = "./processed_dataset"  # path where tokenized_dataset was saved
+DATASET_DIR = "./processed_dataset"  
 TOP_K = 5
 MAX_EXAMPLES = 1000
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
